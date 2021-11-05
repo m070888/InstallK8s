@@ -1,0 +1,2 @@
+--apiserver-advertise-address=10.78.26.184 \
+--ignore-preflight-errors=DirAvailable--etc-kubernetes-manifests
