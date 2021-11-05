@@ -6,11 +6,11 @@
 
 # Set kubeadm kubelet kubectl versions and other parameters
 kubeVer="1.19.0"
-apiserver1="10.0.2.15"
-apiserver2="10.0.2.16"
-apiserver3="10.0.2.17"
-vip="10.0.2.200"
-networkInterface="vlan.206"
+apiserver1="10.78.26.91"
+apiserver2="10.78.26.92"
+apiserver3="10.78.26.93"
+vip="10.78.26.79"
+networkInterface="bond0.206"
 keepalivedPriority="150"
 podCIDR="10.244.0.0/16"
 serviceCIDR="10.96.0.0/12"
