@@ -138,8 +138,8 @@ rules:
   - apiGroups: ["metrics.k8s.io"]
     resources: ["pods", "nodes"]
     verbs: ["get", "list", "watch"]
-  - apiGroups: ["","apps","rbac.authorization.k8s.io","storage.k8s.io","batch","extensions","apiextensions.k8s.io"]
-    resources: ["events","clusterroles","namespaces","nodes","persistentvolumes","storageclasses","cronjobs","daemonsets","deployments","deployments/scale","jobs","pods","pods/log","pods/exec","replicasets","replicationcontrollers","statefulsets","ingresses","services","configmaps","persistentvolumeclaims","secrets","customresourcedefinitions"]
+  - apiGroups: ["","apps","rbac.authorization.k8s.io","storage.k8s.io","batch","extensions","apiextensions.k8s.io","networking.k8s.io"]
+    resources: ["events","networkpolicies","roles","clusterroles","serviceaccounts","rolebindings","clusterrolebindings","namespaces","nodes","persistentvolumes","storageclasses","cronjobs","daemonsets","deployments","deployments/scale","jobs","pods","pods/log","pods/exec","replicasets","replicationcontrollers","statefulsets","ingresses","services","configmaps","persistentvolumeclaims","secrets","customresourcedefinitions"]
     verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 
 ---
