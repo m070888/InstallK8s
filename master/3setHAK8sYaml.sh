@@ -6,14 +6,14 @@
 
 # Set kubeadm kubelet kubectl versions and other parameters
 kubeVer="1.19.0"
-apiserver1="10.78.26.91"
-apiserver2="10.78.26.92"
-apiserver3="10.78.26.93"
-vip="10.78.26.79"
-networkInterface="bond0.206"
+apiserver1="192.169.1.18"
+apiserver2="192.169.1.10"
+apiserver3="192.169.1.15"
+vip="192.169.1.100"
+networkInterface="ens3"
 keepalivedPriority="150"
-podCIDR="10.244.0.0/16"
-serviceCIDR="10.96.0.0/12"
+podCIDR="192.169.32.0/20"
+serviceCIDR="192.169.16.0/20"
 
 # Set haproxy keepalived kubeadm-config yaml and haproxy cfg
 mkdir -p /etc/kubernetes/manifests/
