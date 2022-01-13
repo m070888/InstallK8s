@@ -11,3 +11,4 @@ spec:
       resources:
         limits:
           nvidia.com/gpu: 1 # requesting 4 GPU
+          #nvidia.com/mig-1g.3gb: 1

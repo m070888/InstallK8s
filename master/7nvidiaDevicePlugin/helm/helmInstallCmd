@@ -1,0 +1,2 @@
+export MIG_STRATEGY=<none | single | mixed>
+helm install --set migStrategy=${MIG_STRATEGY} . nvidia-device-plugin
