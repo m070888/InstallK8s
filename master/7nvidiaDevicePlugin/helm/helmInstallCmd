@@ -1,2 +1,11 @@
 export MIG_STRATEGY=<none | single | mixed>
 helm install --set migStrategy=${MIG_STRATEGY} . nvidia-device-plugin
+
+#mig and fix gpu not found bug
+export MIG_STRATEGY=<none | single | mixed>
+helm install \
+    --generate-name \
+    --set compatWithCPUManager=true \
+    --set migStrategy=${MIG_STRATEGY} \
+    -n kube-system \
+    .
