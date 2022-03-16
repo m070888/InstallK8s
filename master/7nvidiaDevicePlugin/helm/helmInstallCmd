@@ -9,3 +9,10 @@ helm install \
     --set migStrategy=${MIG_STRATEGY} \
     -n kube-system \
     .
+	
+	
+#gpu-feature-discovery
+helm install \
+   --generate-name \
+   --set migStrategy=mixed \
+   .
